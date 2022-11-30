@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/df24c2fdc0.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="back">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <h2 class="navbar-brand"><i class="fa fa-university"> Covid System</i></h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/"><i class="fas fa-home"> Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="add"><i class="fas fa-user-friends"> Add details</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+<br>
+<div class="container-lg" id="four">
+    <h1 id="one">Covid Tracking</h1>
+    <h3 class="two">"Enabling to track covid"</h3>
+    <hr>
+    <br>
+    <h3 class="two">Please enter the details</h3>
+    <br>
+<div>
+<form method="post" action="insert">
+  <div class="form-group">
+    <label for="input1">State Name</label>
+    <input type="text" class="form-control" id="input1" placeholder="Enter state" name="State_Name" required>
+  </div>
+  <div class="form-group">
+    <label for="input2">Date of record</label>
+    <input type="date" class="form-control" id="input2" placeholder="Enter date" name="Date_of_Record" required>
+  </div>
+  <div class="form-group">
+    <label for="input3">Number of samples</label>
+    <input type="number" class="form-control" id="input3" placeholder="Enter number of samples" name="No_of_Samples" required>
+  </div>
+  <div class="form-group">
+    <label for="input4">Number of deaths</label>
+    <input type="number" class="form-control" id="input4" placeholder="Enter number of deaths" name="No_of_Deaths" required>
+  </div>
+  <div class="form-group">
+    <label for="input5">Number of posiitive</label>
+    <input type="number" class="form-control" id="input5" placeholder="Enter number of total positive cases" name="No_of_Positive" required>
+  </div>
+  <div class="form-group">
+    <label for="input6">Number of negative</label>
+    <input type="number" class="form-control" id="input6" placeholder="Enter negative cases number" name="No_of_Negative" required>
+  </div>
+  <div class="form-group">
+    <label for="input7">Number of discharge</label>
+    <input type="number" class="form-control" id="input7" placeholder="Enter discharge number" name="No_of_Discharge" required>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+</body>
+</html>

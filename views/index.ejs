@@ -45,6 +45,7 @@
         <th scope="col">No of Positive</th>
         <th scope="col">No of Negative</th>
         <th scope="col">No of Discharge</th>
+        <th scope="col" colspan="2" id="ed">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -58,6 +59,8 @@
         <td><%=res1[i].No_of_Positive%></td>
         <td><%=res1[i].No_of_Negative%></td>
         <td><%=res1[i].No_of_Discharge%></td>
+        <td><a type="button" class="btn btn-primary wd" href="/update/<%=res1[i].ID%>">Edit</a></td>
+        <td><a type="button" class="btn btn-danger wd" href="/delete/<%=res1[i].ID%>">Delete</a></td>
         </tr>
         <%}%>
     </tbody>

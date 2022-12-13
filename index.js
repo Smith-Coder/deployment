@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
-const port = 8080;
+const port = 3000;
 
 
 //trishna
